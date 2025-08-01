@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HRM System - Grupo 6</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .hero-gradient {
+            background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%);
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        .transition-all {
+            transition: all 0.3s ease;
+        }
+    </style>
+</head>
+<body class="font-sans bg-gray-50">
+    <!-- Header -->
+    <header class="hero-gradient text-white shadow-lg">
+        <div class="container mx-auto px-6 py-12">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-8 md:mb-0">
+                    <h1 class="text-4xl md:text-5xl font-bold mb-4">HRM System Pro</h1>
+                    <p class="text-xl mb-6">Solución integral para la gestión moderna de Recursos Humanos</p>
+                    <a href="#proyecto" class="bg-white text-blue-600 font-semibold px-6 py-3 rounded-lg hover:bg-gray-100 transition-all inline-block">
+                        Conoce nuestro proyecto
+                    </a>
+                </div>
+                <div class="md:w-1/2">
+                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
+                         alt="Equipo de trabajo" class="rounded-lg shadow-xl">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Proyecto Section -->
+    <section id="proyecto" class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">Propuesta de Proyecto</h2>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Empresa -->
+                <div class="bg-gray-50 p-8 rounded-xl shadow-md transition-all card-hover">
+                    <div class="text-blue-600 mb-4">
+                        <i class="fas fa-building text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3 text-gray-800">a) Empresa seleccionada</h3>
+                    <p class="text-gray-600">TecnoSoluciones S.A.</p>
+                    <p class="text-gray-600 mt-2">Empresa de tecnología con más de 200 empleados que actualmente gestiona sus recursos humanos con sistemas desconectados y procesos manuales.</p>
+                </div>
+                
+                <!-- Nombre -->
+                <div class="bg-gray-50 p-8 rounded-xl shadow-md transition-all card-hover">
+                    <div class="text-blue-600 mb-4">
+                        <i class="fas fa-project-diagram text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3 text-gray-800">b) Nombre del proyecto</h3>
+                    <p class="text-2xl font-bold text-blue-600">HRM System Pro</p>
+                    <p class="text-gray-600 mt-2">Sistema integrado de gestión de recursos humanos para medianas empresas.</p>
+                </div>
+                
+                <!-- Descripción -->
+                <div class="bg-gray-50 p-8 rounded-xl shadow-md transition-all card-hover md:col-span-2">
+                    <div class="text-blue-600 mb-4">
+                        <i class="fas fa-file-alt text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3 text-gray-800">c) Descripción del proyecto</h3>
+                    <p class="text-gray-600 mb-4">HRM System Pro es una solución de software integral diseñada para automatizar y optimizar todos los procesos de gestión de recursos humanos en TecnoSoluciones S.A.</p>
+                    <p class="text-gray-600">El sistema centralizará la información de empleados, gestionará nóminas, controlará asistencia, administrará beneficios, facilitará la evaluación del desempeño y mejorará la comunicación interna.</p>
+                    <div class="mt-6 grid md:grid-cols-3 gap-4">
+                        <div class="flex items-center">
+                            <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                            <span>Gestión centralizada</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                            <span>Automatización de procesos</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                            <span>Reportes en tiempo real</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Objetivos -->
+                <div class="bg-gray-50 p-8 rounded-xl shadow-md transition-all card-hover md:col-span-2">
+                    <div class="text-blue-600 mb-4">
+                        <i class="fas fa-bullseye text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3 text-gray-800">d) Objetivos del proyecto</h3>
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div class="flex items-start">
+                            <div class="bg-blue-100 p-3 rounded-full mr-4">
+                                <i class="fas fa-chart-line text-blue-600"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-gray-800">Eficiencia operativa</h4>
+                                <p class="text-gray-600 text-sm">Reducir en un 40% el tiempo dedicado a procesos administrativos de RRHH.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="bg-blue-100 p-3 rounded-full mr-4">
+                                <i class="fas fa-database text-blue-600"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-gray-800">Centralización de datos</h4>
+                                <p class="text-gray-600 text-sm">Unificar toda la información de empleados en una sola plataforma.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="bg-blue-100 p-3 rounded-full mr-4">
+                                <i class="fas fa-user-shield text-blue-600"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-gray-800">Cumplimiento legal</h4>
+                                <p class="text-gray-600 text-sm">Garantizar el cumplimiento de normativas laborales y de protección de datos.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="bg-blue-100 p-3 rounded-full mr-4">
+                                <i class="fas fa-users text-blue-600"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-gray-800">Experiencia del empleado</h4>
+                                <p class="text-gray-600 text-sm">Mejorar la satisfacción de los empleados con herramientas de autogestión.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Tecnologías -->
+                <div class="bg-gray-50 p-8 rounded-xl shadow-md transition-all card-hover md:col-span-2">
+                    <div class="text-blue-600 mb-4">
+                        <i class="fas fa-code text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3 text-gray-800">e) Entorno de desarrollo y herramientas</h3>
+                    <div class="grid md:grid-cols-3 gap-6">
+                        <div class="text-center">
+                            <div class="bg-blue-100 p-4 rounded-full inline-block mb-3">
+                                <i class="fas fa-laptop-code text-blue-600 text-3xl"></i>
+                            </div>
+                            <h4 class="font-semibold text-gray-800 mb-2">Frontend</h4>
+                            <p class="text-gray-600 text-sm">React.js, TailwindCSS, Chart.js</p>
+                        </div>
+                        <div class="text-center">
+                            <div class="bg-blue-100 p-4 rounded-full inline-block mb-3">
+                                <i class="fas fa-server text-blue-600 text-3xl"></i>
+                            </div>
+                            <h4 class="font-semibold text-gray-800 mb-2">Backend</h4>
+                            <p class="text-gray-600 text-sm">Node.js, Express, MongoDB</p>
+                        </div>
+                        <div class="text-center">
+                            <div class="bg-blue-100 p-4 rounded-full inline-block mb-3">
+                                <i class="fas fa-tools text-blue-600 text-3xl"></i>
+                            </div>
+                            <h4 class="font-semibold text-gray-800 mb-2">Herramientas</h4>
+                            <p class="text-gray-600 text-sm">Git, Docker, Postman, Jira</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Análisis Section -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">Análisis: Principios de Diseño y Módulos HRM</h2>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Principios -->
+                <div class="bg-white p-8 rounded-xl shadow-md transition-all card-hover">
+                    <h3 class="text-xl font-semibold mb-6 text-gray-800 border-b pb-3">Principios fundamentales de diseño en ingeniería de software</h3>
+                    <div class="space-y-6">
+                        <div class="flex items-start">
+                            <div class="bg-blue-100 p-2 rounded-full mr-4 mt-1">
+                                <i class="fas fa-check text-blue-600"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-gray-800">Principio de abstracción</h4>
+                                <p class="text-gray-600 text-sm">Simplificar sistemas complejos ocultando detalles irrelevantes y mostrando solo características esenciales.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="bg-blue-100 p-2 rounded-full mr-4 mt-1">
+                                <i class="fas fa-check text-blue-600"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-gray-800">Principio de modularidad</h4>
+                                <p class="text-gray-600 text-sm">Dividir el sistema en componentes independientes con interfaces bien definidas para facilitar mantenimiento y escalabilidad.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="bg-blue-100 p-2 rounded-full mr-4 mt-1">
+                                <i class="fas fa-check text-blue-600"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-gray-800">Principio de encapsulamiento</h4>
+                                <p class="text-gray-600 text-sm">Ocultar los detalles de implementación y exponer solo interfaces necesarias para interactuar con el componente.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="bg-blue-100 p-2 rounded-full mr-4 mt-1">
+                                <i class="fas fa-check text-blue-600"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-gray-800">Principio de cohesión</h4>
+                                <p class="text-gray-600 text-sm">Cada módulo debe tener una única responsabilidad bien definida y relacionada.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="bg-blue-100 p-2 rounded-full mr-4 mt-1">
+                                <i class="fas fa-check text-blue-600"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-gray-800">Principio de bajo acoplamiento</h4>
+                                <p class="text-gray-600 text-sm">Minimizar las dependencias entre módulos para facilitar cambios independientes.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Módulos HRM -->
+                <div class="bg-white p-8 rounded-xl shadow-md transition-all card-hover">
+                    <h3 class="text-xl font-semibold mb-6 text-gray-800 border-b pb-3">Módulos para un Sistema de Gestión de Recursos Humanos</h3>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="bg-blue-50 p-4 rounded-lg">
+                            <i class="fas fa-user-tie text-blue-600 mb-2"></i>
+                            <h4 class="font-semibold text-sm text-gray-800">Gestión de empleados</h4>
+                        </div>
+                        <div class="bg-blue-50 p-4 rounded-lg">
+                            <i class="fas fa-file-invoice-dollar text-blue-600 mb-2"></i>
+                            <h4 class="font-semibold text-sm text-gray-800">Nómina</h4>
+                        </div>
+                        <div class="bg-blue-50 p-4 rounded-lg">
+                            <i class="fas fa-calendar-check text-blue-600 mb-2"></i>
+                            <h4 class="font-semibold text-sm text-gray-800">Asistencia</h4>
+                        </div>
+                        <div class="bg-blue-50 p-4 rounded-lg">
+                            <i class="fas fa-briefcase text-blue-600 mb-2"></i>
+                            <h4 class="font-semibold text-sm text-gray-800">Reclutamiento</h4>
+                        </div>
+                        <div class="bg-blue-50 p-4 rounded-lg">
+                            <i class="fas fa-chart-line text-blue-600 mb-2"></i>
+                            <h4 class="font-semibold text-sm text-gray-800">Desempeño</h4>
+                        </div>
+                        <div class="bg-blue-50 p-4 rounded-lg">
+                            <i class="fas fa-graduation-cap text-blue-600 mb-2"></i>
+                            <h4 class="font-semibold text-sm text-gray-800">Capacitación</h4>
+                        </div>
+                        <div class="bg-blue-50 p-4 rounded-lg">
+                            <i class="fas fa-heartbeat text-blue-600 mb-2"></i>
+                            <h4 class="font-semibold text-sm text-gray-800">Beneficios</h4>
+                        </div>
+                        <div class="bg-blue-50 p-4 rounded-lg">
+                            <i class="fas fa-chart-pie text-blue-600 mb-2"></i>
+                            <h4 class="font-semibold text-sm text-gray-800">Reportes</h4>
+                        </div>
+                    </div>
+                    <div class="mt-6 bg-blue-50 p-4 rounded-lg">
+                        <h4 class="font-semibold text-gray-800 mb-2">Descripción detallada de módulos:</h4>
+                        <ul class="text-sm text-gray-600 list-disc pl-5 space-y-1">
+                            <li><span class="font-medium">Gestión de empleados:</span> Base de datos centralizada con información personal, profesional y contractual.</li>
+                            <li><span class="font-medium">Nómina:</span> Automatización de cálculos salariales, deducciones, impuestos y generación de recibos.</li>
+                            <li><span class="font-medium">Asistencia:</span> Control de horarios, vacaciones, permisos y ausencias con integración a dispositivos biométricos.</li>
+                            <li><span class="font-medium">Reclutamiento:</span> Gestión de vacantes, candidatos, entrevistas y procesos de selección.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Demo Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">Prototipo de Interfaz</h2>
+            
+            <div class="bg-gray-800 rounded-xl p-4 mx-auto max-w-4xl">
+                <div class="flex items-center mb-4">
+                    <div class="flex space-x-2">
+                        <div class="w-3 h-3 rounded-full bg-red-500"></div>
+                        <div class="w-3 h-3 rounded-full bg-yellow-500"></div>
+                        <div class="w-3 h-3 rounded-full bg-green-500"></div>
+                    </div>
+                    <div class="text-white text-sm ml-4">HRM System Pro - Dashboard</div>
+                </div>
+                
+                <div class="bg-white rounded-lg overflow-hidden">
+                    <div class="flex">
+                        <!-- Sidebar -->
+                        <div class="w-1/5 bg-blue-600 text-white p-4">
+                            <div class="mb-8">
+                                <h3 class="font-bold text-lg mb-4">HRM System</h3>
+                                <ul class="space-y-2">
+                                    <li class="flex items-center p-2 bg-blue-700 rounded">
+                                        <i class="fas fa-tachometer-alt mr-2"></i>
+                                        <span>Dashboard</span>
+                                    </li>
+                                    <li class="flex items-center p-2 hover:bg-blue-700 rounded">
+                                        <i class="fas fa-users mr-2"></i>
+                                        <span>Empleados</span>
+                                    </li>
+                                    <li class="flex items-center p-2 hover:bg-blue-700 rounded">
+                                        <i class="fas fa-calendar-alt mr-2"></i>
+                                        <span>Asistencia</span>
+                                    </li>
+                                    <li class="flex items-center p-2 hover:bg-blue-700 rounded">
+                                        <i class="fas fa-file-invoice-dollar mr-2"></i>
+                                        <span>Nómina</span>
+                                    </li>
+                                    <li class="flex items-center p-2 hover:bg-blue-700 rounded">
+                                        <i class="fas fa-chart-line mr-2"></i>
+                                        <span>Reportes</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <!-- Main Content -->
+                        <div class="w-4/5 p-6">
+                            <div class="flex justify-between items-center mb-6">
+                                <h2 class="text-xl font-bold">Dashboard</h2>
+                                <div class="flex items-center">
+                                    <div class="relative">
+                                        <input type="text" placeholder="Buscar..." class="pl-8 pr-4 py-2 border rounded-lg">
+                                        <i class="fas fa-search absolute left-2 top-3 text-gray-400"></i>
+                                    </div>
+                                    <div class="ml-4 w-8 h-8 rounded-full bg-blue-100 flex items-center justify-center">
+                                        <i class="fas fa-user text-blue-600"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
+                                <div class="bg-blue-50 p-4 rounded-lg">
+                                    <div class="flex justify-between">
+                                        <div>
+                                            <p class="text-sm text-gray-600">Empleados</p>
+                                            <p class="text-2xl font-bold">243</p>
+                                        </div>
+                                        <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center">
+                                            <i class="fas fa-users text-blue-600"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bg-green-50 p-4 rounded-lg">
+                                    <div class="flex justify-between">
+                                        <div>
+                                            <p class="text-sm text-gray-600">Presentes hoy</p>
+                                            <p class="text-2xl font-bold">215</p>
+                                        </div>
+                                        <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center">
+                                            <i class="fas fa-user-check text-green-600"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bg-purple-50 p-4 rounded-lg">
+                                    <div class="flex justify-between">
+                                        <div>
+                                            <p class="text-sm text-gray-600">Vacantes</p>
+                                            <p class="text-2xl font-bold">12</p>
+                                        </div>
+                                        <div class="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center">
+                                            <i class="fas fa-briefcase text-purple-600"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="bg-gray-50 p-4 rounded-lg mb-6">
+                                <h3 class="font-semibold mb-3">Últimas actividades</h3>
+                                <div class="space-y-3">
+                                    <div class="flex items-center">
+                                        <div class="w-8 h-8 rounded-full bg-blue-100 flex items-center justify-center mr-3">
+                                            <i class="fas fa-user-plus text-blue-600 text-sm"></i>
+                                        </div>
+                                        <div>
+                                            <p class="text-sm">Nuevo empleado registrado: María González</p>
+                                            <p class="text-xs text-gray-500">Hace 2 horas</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-center">
+                                        <div class="w-8 h-8 rounded-full bg-green-100 flex items-center justify-center mr-3">
+                                            <i class="fas fa-file-alt text-green-600 text-sm"></i>
+                                        </div>
+                                        <div>
+                                            <p class="text-sm">Nómina de marzo procesada</p>
+                                            <p class="text-xs text-gray-500">Ayer, 3:45 PM</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between">
+                <div class="mb-8 md:mb-0">
+                    <h3 class="text-xl font-bold mb-4">HRM System Pro</h3>
+                    <p class="text-gray-400 max-w-md">Solución integral para la gestión moderna de Recursos Humanos desarrollada por el Grupo 6.</p>
+                </div>
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-8">
+                    <div>
+                        <h4 class="font-semibold mb-4">Proyecto</h4>
+                        <ul class="space-y-2">
+                            <li><a href="#" class="text-gray-400 hover:text-white">Documentación</a></li>
+                            <li><a href="#" class="text-gray-400 hover:text-white">Repositorio</a></li>
+                            <li><a href="#" class="text-gray-400 hover:text-white">Roadmap</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="font-semibold mb-4">Equipo</h4>
+                        <ul class="space-y-2">
+                            <li><a href="#" class="text-gray-400 hover:text-white">Miembros</a></li>
+                            <li><a href="#" class="text-gray-400 hover:text-white">Roles</a></li>
+                            <li><a href="#" class="text-gray-400 hover:text-white">Contacto</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="font-semibold mb-4">Legal</h4>
+                        <ul class="space-y-2">
+                            <li><a href="#" class="text-gray-400 hover:text-white">Privacidad</a></li>
+                            <li><a href="#" class="text-gray-400 hover:text-white">Términos</a></li>
+                            <li><a href="#" class="text-gray-400 hover:text-white">Licencias</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400 mb-4 md:mb-0">© 2023 Grupo 6 - Todos los derechos reservados</p>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Simple animation for cards when they come into view
+        document.addEventListener('DOMContentLoaded', function() {
+            const cards = document.querySelectorAll('.card-hover');
+            
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                    }
+                });
+            }, { threshold: 0.1 });
+            
+            cards.forEach(card => {
+                card.style.opacity = '0';
+                card.style.transform = 'translateY(20px)';
+                card.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+                observer.observe(card);
+            });
+        });
+    </script>
+</body>
+</html>
